@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MY FORM</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn1.iconfinder.com/data/icons/university-indigo-vol-1/256/Enrollment-512.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1 style="text-align: center"><u>MY FORM</u></h1>
+
+    <form action="main.py" method="post">
+      <p>NOTE: The elements contains <bold>*</bold> are mandatory</p>
+
+      <label for="name">FIRST NAME*:</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your first name" required
+      /><br /><br />
+      <label for="name">LAST NAME*:</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your last name" required
+      /><br /><br />
+
+      <label for="email">EMAIL*:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email id"  required
+      /><br /><br />
+      <label for="password">PASSWORD:</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password" required
+      /><br /><br />
+
+      <label for="phno">PHONE NUMBER*:</label>
+      <input
+        type="number"
+        name="number"
+        id="phno"
+        placeholder="enter your number" required
+      /><br />
+      <br />
+
+      <lable for="dob">DOB*:</lable>
+      <input
+        type="date"
+        name="dob"
+        id="dob" required
+      />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="age">AGE*:</label>
+      <input
+        type="number"
+        name="number"
+        id="age"
+        placeholder="enter your age" min="18" max="100" required
+      /><br />
+      <br />
+
+      <label>ENTER YOUR GENDER:</label><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="gender" id="male" value="Male"/>
+      <label for="male">MALE</label>
+      <input type="radio" name="gender" id="female" value="Female" />
+      <label for="female">FEMALE</label>
+      <input type="radio" name="gender" id="not intrested" value="Not Intrested"/>
+      <label for="not intrested">NOT INTRESTED</label><br /><br />
+
+      <label for="file">UPLOAD YOUR FILE:</label>
+      <input type="file" name="file" id="file" /><br /><br />
+
+      <button type="submit">SUBMIT</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="reset">RESET</button>
+    </form>
+  </body>
+</html>
